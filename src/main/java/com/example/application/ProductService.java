@@ -8,8 +8,5 @@ import org.springframework.stereotype.Service;
 @BrowserCallable
 @Service
 @AnonymousAllowed
-public class ProductService extends CrudRepositoryService<Product, Long> {
-    public ProductService(ProductRepository productRepository) {
-        super(Product.class, productRepository);
-    }
+public class ProductService extends CrudRepositoryService<Product, Long, ProductRepository> {
 }
